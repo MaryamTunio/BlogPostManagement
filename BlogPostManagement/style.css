@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.topbar{
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding:15px 10px;
+    font-weight:700;
+    margin-left:30px;
+    font-size:30px;
+    border-bottom:1px solid lightgrey;
+   
+}
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:30px;
+}
+
+
+    .card {
+   background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* HEADER INSIDE CARD */
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.badge{
+    background:#e8f1ff;
+    color:#2b6cff;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.badge.green{
+    background:#e7f7ee;
+    color:#1a9c5a;
+}
+
+label{
+    font-size:12px;
+    color:#666;
+    display:block;
+    margin-top:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus, textarea:focus{
+    border-color:#2b6cff;
+}
+
+button{
+    margin-top:15px;
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#2b6cff;
+    color:white;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.preview-card h1{
+    margin:10px 0;
+}
+
+.date{
+    font-size:12px;
+    color:#888;
+}
+
+.author{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:20px;
+    color:#555;
+}
+
+.container2{
+    padding:0 30px 30px;
+}
+
+#postsContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:15px;
+    margin-top:15px;
+}
+
+.post-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.container2
+{
+    padding:0 30px 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width:900px){
+    .container{
+        grid-template-columns:1fr;
+    }
+}
